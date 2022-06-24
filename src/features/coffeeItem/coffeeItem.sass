@@ -1,0 +1,59 @@
+.header
+    padding: 130px 0 84px 0
+    background: url('../../assets/ourCoffeePage/bg.jpg') center center /cover no-repeat
+    text-align: center
+
+.single-item
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 70px 10px 60px 10px
+    margin: 0 auto
+    max-width: 865px
+    &__img
+        width: 392px
+        height: 355px
+        object-fit: cover
+        filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25))
+    &__info
+        text-align: center
+        img
+            margin-bottom: 25px
+    &__descr
+        width: 418px
+        font-size: 14px
+        line-height: 20px
+        text-align: left
+        margin-bottom: 16px
+        span
+            font-weight: bold
+    &__price
+        text-align: left
+        span
+            font-size: 24px
+            line-height: 35px
+            font-weight: bold
+
+.error
+    margin: 30px 0
+    text-align: center
+    font-size: 30px
+    line-height: 45px
+
+@media (max-width: 926px)
+    .single-item
+        flex-direction: column
+        align-items: center
+        &__img
+            margin-bottom: 20px
+
+@media (max-width: 600px)
+    .single-item__img
+        width: 65%
+        height: 60%
+    .error
+        font-size: 20px
+
+@media (max-width: 425px)
+    .single-item__descr
+        width: 300px
